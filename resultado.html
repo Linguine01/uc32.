@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Resultado do Aluno</h1>
+
+        <h2>{{ nome }}</h2>
+
+        <p>Nota 1: {{ nota1 }}</p>
+        <p>Nota 2: {{ nota2 }}</p>
+        <p>Nota 3: {{ nota3 }}</p>
+
+        <h3>Média: {{ "%.2f"|format(media) }}</h3>
+
+        <h2>{{ resultado }}</h2>
+
+        <a href="/" class="botao">Voltar</a>
+
+    </div>
+
+</body>
+</html>
